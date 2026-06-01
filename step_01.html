@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content=>
+        <title>Edbridg App step 01</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:600|Poppins:300,500,600,700&display=swap" rel="stylesheet"> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Edbridg"><link href="css/app.bundle.css" rel="stylesheet"></head>
+    <body class="preload">
+        <!-- header -->
+        <header class="header" id="sticky-header-js">
+            <div class="container">
+                <a href="./step_01.html" class="logo" id="logo">
+                    <img src="./assets/icons/edbridg_logo_white.svg" width="144" alt="">
+                </a>
+
+                <a href="javascript:void(0)" class="btn btn-primary menu  hamburger--white" id="trigger">
+                    <img src="./assets/icons/hamburger_menu.svg" alt="">
+                </a>
+            </div>
+        </header>
+
+        <!-- side nav -->
+        <div id="sideNav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" id="closeBtn">&times;</a>
+            <a target="_blank" href="https://www.edbridg.com/about-us">About us</a>
+            <a target="_blank" href="https://www.edbridg.com/contact">Contact</a>
+        </div>
+
+        <!-- section 01  -->
+        <section class="jumbotron-fluid section--01 text-center">
+            <div class="container">
+                <h2 class="heading">
+                    We finance your dream school today.
+                    Pay back only when you start a job.
+                </h2>
+
+                <p class="text">
+                    Our income share agreements (ISAs) are more flexible than traditional student loans.
+                    After you graduate, you pay back a percentage of your income for a fixed period of time only when you are employed.
+                </p>
+                <a href="#" class="btn btn-primary">Get quote</a>
+                <img src="./assets/images/hero__bg.jpg" alt=""> 
+            </div>
+            <img src="./assets/images/hero__bg.jpg" alt="">
+        </section>
+
+        <!-- section 02  -->
+        <section class="jumbotron-fluid section--02">
+            <div class="container">
+                <h2 class="heading text-center">How much do you need to finance your studies? </h2>
+                <form action="" class="simulator">
+
+                    <!-- section top -->
+                    <div class="section--top ">
+                        <div class="slider__container text-center">
+                            <input type="range" min="5000" max="80000" step="1000" value="12000" class="amount-slider" id="amountSlider-1">
+                        </div>
+                    </div>
+
+                    <!-- section middle -->
+                    <div class="section--middle">
+                        <div class="section--middle-left">
+                            <div class="inner__container">
+
+                                <!-- select box -->
+                                <div class="form-group block"> 
+                                    <label for="major"> Degree </label>                         
+                                    <div class="select__box select__box_shadow">
+                                        <select id="degree" class="form-control" autofocus="true" required>
+                                            <option value="1" selected="selected">Degree</option>
+                                            <option value="2">MBA</option>
+                                        </select>
+                                        <div class="icon">
+                                            <img src="./assets/icons/arrow.svg" width="15" height="15" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- select box -->
+                                <div class="form-group block">
+                                    <label for="major"> Major </label>                                
+                                    <div class="select__box select__box_shadow">
+                                        <select id="major" class="form-control" autofocus="true" required>
+                                            <option value="1" selected="selected">Major</option>
+                                            <option value="2"> Business and finance </option>
+                                        </select>
+                                        <div class="icon">
+                                            <img src="./assets/icons/arrow.svg" width="15" height="15" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- select box -->
+                                <div class="block">
+                                    <label for="school"> School </label>
+                                    <div class="select__box select__box_shadow">
+                                        <select id="school" class="form-control" autofocus="true" required>
+                                            <option value="1" selected="selected">School</option>
+                                            <option value="2"> INSEAD  </option>
+                                            <option value="3"> MIT  </option>
+                                        </select>
+                                        <div class="icon">
+                                            <img src="./assets/icons/arrow.svg" width="15" height="15" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section--middle-right">
+                            <div class="inner__container">
+                                <div class="text text-center">
+                                    You will pay back
+                                </div>
+                                <div class="text text--big-size text-center">
+                                    5.4%
+                                </div>
+                                <div class="text text--medium-size text-center">
+                                    of your salary during <span class="text--blue-color">6 years.</span> 
+                                </div>
+                                <ul class="list text-left">
+                                    <li>
+                                        <div class="checkmark__circle mr-2">
+                                            <img src="./assets/icons/checkmark_circle_outline.svg" width="18" height="18" alt="">
+                                        </div>
+                                        More flexible than a loan   
+                                    </li>
+                                    <li>
+                                        <div class="checkmark__circle mr-2">
+                                            <img src="./assets/icons/checkmark_circle_outline.svg" width="18" height="18" alt="">
+                                        </div>
+                                        You pay only when you get a job  
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- section bottom -->
+                    <div class="section--bottom">
+                        <button class="btn btn-primary">Personalize for you</button>
+                        <p class="text text--small-size text-center">Discover individual rate in 30sec</p>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- section 03 -->
+        <section class="jumbotron-fluid section--03 text-center">
+            <div class="container">
+                <h2 class="heading">Why should you choose an ISA with Edbridg</h2>
+                <div class="blocks">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="block">
+                                <!--<div class="circle text-center">01</div>-->
+                                <img src="./assets/icons/Flexible.svg" width="150" height="130"  alt="Flexible">
+                                <h4 class="heading--small">Flexible</h4>
+                                <p class="text">
+                                    You only payback once you have a job. 
+                                    If you stop earning at any point in time, you stop paying back.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="block">
+                                <!--<div class="circle text-center">02</div>-->
+                                <img src="./assets/icons/Affordable.svg" width="150" height="130"  alt="Affordable">
+                                <h4 class="heading--small">Affordable</h4>
+                                <p class="text">
+                                    You will always pay back the same fixed percentage of your revenue, regardless of the variations in salary.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="block">
+                                <!--<div class="circle text-center">03</div>-->
+                                <img src="./assets/icons/Secure.svg" width="150" height="130" alt="Secure">
+                                <h4 class="heading--small">Secure</h4>
+                                <p class="text">
+                                    It’s capped: your If you become extremely successful and earn very well , you will never pay back more than 3x the original amount you borrowed.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-primary">Get your rate now</a>
+            </div>
+        </section>
+
+        <!-- section 04 -->
+        <section class="jumbotron-fluid section--04 text-center">
+            <div class="container">
+                <h2 class="heading">What is an Income Share Agreement (ISA) ?</h2>
+                <p class="text">An income share agreement is a 
+                    contract between an investor (Edbridg) and a student, 
+                    where the student get his education financed and pays
+                    no upfront tuition fees in exchange of paying back a
+                    percentage of his future revenues 
+                    for a fixed number of years.
+                </p>
+                <h3 class="heading--medium">The components of an ISA</h3>
+                <div class="blocks">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="block">
+                                <div class="circle text-center">$</div>
+                                <h4 class="heading--small">Amount</h4>
+                                <p class="text">
+                                    The amount we give you to help pay for your tuition.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="block">
+                                <div class="circle text-center">%</div>
+                                <h4 class="heading--small">Income Share</h4>
+                                <p class="text">
+                                    The percentage of income you agree to pay back after graduation.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="block">
+                                <div class="circle text-center">
+                                    <div class="icon">
+                                        <img src="./assets/icons/calendar.svg" width="25" height="25" alt="">
+                                    </div>
+                                </div>
+                                <h4 class="heading--small">Payback Period</h4>
+                                <p class="text">
+                                    The maximum number of monthly payments you will make to to fulfill the ISA obligation.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="block">
+                                <div class="circle text-center">3x</div>
+                                <h4 class="heading--small">Payment Cap</h4>
+                                <p class="text">
+                                    A payment cap ensures you don't pay more than three times what you borrowed.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="heading--medium">Benefits of Edbridg ISA over a Student Loan</h3>
+
+                <!-- table for desktop -->
+                <div class="table--desktop">
+                    <div class="first__columns">
+                        <div class="column--top"></div>
+                        <div class="column">
+                            <div class="icon">
+                                <img src="./assets/icons/description.svg" width="26" height="26" alt="">
+                            </div>
+                            <h4 class="heading--small">Description</h4>
+                        </div>
+                        <div class="column">
+                            <div class="icon">
+                                <img src="./assets/icons/payment.svg" alt="">
+                            </div>
+                            <h4 class="heading--small">Payments </h4>
+                        </div>
+                        <div class="column">
+                            <div class="icon">
+                                <img src="./assets/icons/stock_earnings.svg" alt="">
+                            </div>
+                            <h4 class="heading--small">Flexibility </h4>
+                        </div>
+                        <div class="column">
+                            <div class="icon">
+                                <img src="./assets/icons/refund.svg" alt="">
+                            </div>
+                            <h4 class="heading--small">Credit history </h4>
+                        </div>
+                        <div class="column">
+                            <div class="icon">
+                                <img src="./assets/icons/graduate_student.svg" alt="">
+                            </div>
+                            <h4 class="heading--small">Requires a cosigner</h4>
+                        </div>
+                    </div>
+                    <div class="second__columns">
+                        <div class="column--top column--top-bordered">
+                            <h3 class="heading--medium heading--medium-01">Loan</h3>
+                        </div>
+                        <div class="column">
+                            <p class="text text-left">
+                                A commitment to repay a fixed amount of money (principal) plus an interest after graduation
+                            </p>
+                        </div>
+                        <div class="column">
+                            <p class="text text-left">
+                                Fixed payment means you have to pay regardless of what you may earn
+                            </p>
+                        </div>
+                        <div class="column">
+                            <p class="text text-left">
+                                limited flexibility- 6 months grace period maximum
+                            </p>
+                        </div>
+                        <div class="column">
+                            <p class="text text-left">
+                                YES- Bias against low-income households with lower credit scores
+                            </p>
+                        </div>
+                        <div class="column">
+                            <p class="text text-left">
+                                Yes most of the time
+                            </p>
+                        </div>
+                    </div>
+                    <div class="third__columns">
+                        <div class="column--top column--top-bordered">
+                            <h3 class="heading--medium heading--medium-02">Edbridg ISA</h3>
+                        </div>
+                        <div class="column">
+                            <p class="text text-left">
+                                A commitment to contribute a portion of future income for a fixed time duration
+                            </p>
+                        </div>
+                        <div class="column">
+                            <p class="text text-left">
+                                Based on a fixed percentage of your income so you never pay more than you can afford
+                            </p>
+                        </div>
+                        <div class="column">   
+                            <p class="text text-left">
+                                Full flexibility - you only pay back when they you are earning.
+                            </p>
+                        </div>
+                        <div class="column">
+                            <p class="text text-left">
+                                NO- Our ISAs depends on you and your potential - not your family's financial situation
+                            </p>
+                        </div>
+                        <div class="column">
+                            <p class="text text-left">
+                                No
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <!-- table for mobile -->
+                <!-- Nav tabs -->
+                <div class="table--mobile">
+                    <ul class="nav nav-tabs d-flex justify-content-center" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#Loan">Loan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#ISA">Edbridg ISA</a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div id="Loan" class="container tab-pane active"><br>
+                            <div class="table__row table__row--01 d-flex align-items-center justify-content-start">
+                                <div class="icon  w-50 text-center">
+                                    <h4 class="heading--small">
+                                        <img src="./assets/icons/description.svg" class="d-block mx-auto mb-0" width="26" height="26" alt="">
+                                        Description
+                                    </h4>
+                                </div>
+                                <p class="text  w-50 text-left">
+                                    A commitment to repay a fixed amount of money (principal) plus an interest after graduation. 
+                                </p>
+                            </div>
+
+                            <div class="table__row table__row--02 d-flex align-items-center justify-content-start">
+                                <div class="icon  w-50 text-center">
+                                    <h4 class="heading--small">
+                                        <img src="./assets/icons/payment.svg" class="d-block mx-auto mb-0" width="26" height="26" alt="">
+                                        Payments 
+                                    </h4>
+                                </div>
+                                <p class="text  w-50 text-left">
+                                    Fixed payment means you have to pay regardless of what you may earn. 
+                                </p>
+                            </div>
+
+                            <div class="table__row table__row--03 d-flex align-items-center justify-content-start ">
+                                <div class="icon w-50 text-center">
+                                    <h4 class="heading--small">
+                                        <img src="./assets/icons/stock_earnings.svg" class="d-block mx-auto mb-0" width="26" height="26" alt="">
+                                        Flexibility 
+                                    </h4>
+                                </div>
+                                <p class="text  w-50 text-left">
+                                    limited flexibility- 6 months grace period maximum.  
+                                </p>
+                            </div>
+
+                            <div class="table__row table__row--04 d-flex align-items-center justify-content-start">
+                                <div class="icon w-50 text-center">
+                                    <h4 class="heading--small">
+                                        <img src="./assets/icons/refund.svg" class="d-block mx-auto mb-0" width="26" height="26" alt="">
+                                        Credit history 
+                                    </h4>
+                                </div>
+                                <p class="text w-50 text-left">
+                                    YES- Bias against low-income households with lower credit scores.   
+                                </p>
+                            </div>
+
+                            <div class="table__row table__row--05 d-flex align-items-center justify-content-start">
+                                <div class="icon w-50 text-center">
+                                    <h4 class="heading--small">
+                                        <img src="./assets/icons/graduate_student.svg" class="d-block mx-auto mb-0" width="26" height="26" alt="">
+                                        Requires a cosigner
+                                    </h4>
+                                </div>
+                                <p class="text w-50 text-left">
+                                    Yes most of the time .   
+                                </p>
+                            </div>
+                        </div>
+                        <div id="ISA" class="container tab-pane fade"><br>
+                            <div class="table__row table__row--01 d-flex align-items-center justify-content-start">
+                                <div class="icon  w-50 text-center">
+                                    <h4 class="heading--small">
+                                        <img src="./assets/icons/description.svg" class="d-block mx-auto mb-0" width="26" height="26" alt="">
+                                        Description
+                                    </h4>
+                                </div>
+                                <p class="text  w-50 text-left">
+                                    A commitment to contribute a portion of future income for a fixed time duration. 
+                                </p>
+                            </div>
+
+                            <div class="table__row table__row--02 d-flex align-items-center justify-content-start">
+                                <div class="icon  w-50 text-center">
+                                    <h4 class="heading--small">
+                                        <img src="./assets/icons/payment.svg" class="d-block mx-auto mb-0" width="26" height="26" alt="">
+                                        Payments 
+                                    </h4>
+                                </div>
+                                <p class="text  w-50 text-left">
+                                    Based on a fixed percentage of your income so you never pay more than you can afford. 
+                                </p>
+                            </div>
+
+                            <div class="table__row table__row--03 d-flex align-items-center justify-content-start ">
+                                <div class="icon w-50 text-center">
+                                    <h4 class="heading--small">
+                                        <img src="./assets/icons/stock_earnings.svg" class="d-block mx-auto mb-0" width="26" height="26" alt="">
+                                        Flexibility 
+                                    </h4>
+                                </div>
+                                <p class="text  w-50 text-left">
+                                    Full flexibility - you only pay back when they you are earning.   
+                                </p>
+                            </div>
+
+                            <div class="table__row table__row--04 d-flex align-items-center justify-content-start">
+                                <div class="icon w-50 text-center">
+                                    <h4 class="heading--small">
+                                        <img src="./assets/icons/refund.svg" class="d-block mx-auto mb-0" width="26" height="26" alt="">
+                                        Credit history 
+                                    </h4>
+                                </div>
+                                <p class="text w-50 text-left">
+                                    NO- Our ISAs depends on you and your potential - not your family's financial situation.   
+                                </p>
+                            </div>
+
+                            <div class="table__row table__row--05 d-flex align-items-center justify-content-start">
+                                <div class="icon w-50 text-center">
+                                    <h4 class="heading--small">
+                                        <img src="./assets/icons/graduate_student.svg" class="d-block mx-auto mb-0" width="26" height="26" alt="">
+                                        Requires a cosigner
+                                    </h4>
+                                </div>
+                                <p class="text w-50 text-left">
+                                    No.   
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="btn btn-primary">Get your rate now</a>
+            </div>
+        </section>
+
+        <!-- contact us -->
+        <section class="jumbotron-fluid contact_us text-center">
+            <div class="container">
+                <p class="text">Any question ? Please email us at </p>
+                <p class="email">contact@edbridg.com</p>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="section--top">
+                    <div class="row">
+                        <div class="col-12 col-xl-3">
+                            <div class="inner__container block--01">
+                                <a href="./step_01.html" class="logo" id="logo">
+                                    <img src="./assets/icons/edbridg_logo_white.svg" width="148" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xl-5">
+                            <div class="inner__container block--02">
+                                <nav class="links">
+                                    <a href="./step_01.html">Home</a>
+                                    <a target="_blank" href="https://www.edbridg.com/about-us">About us</a>
+                                    <a target="_blank" href="https://www.edbridg.com/contact">Contact us</a>
+                                </nav>
+                                <p class="address">
+                                    20 OLD BAILEY, London, EC4M 7AN, United Kingdom
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xl-4">
+                            <div class="inner__container block--03">
+                                <span>Follow us :</span>
+                                <nav class="social__media">
+                                    <a href="https://www.linkedin.com/company/edbridg/" target="_blank">
+                                        <img src="./assets/icons/linkedin.svg" width="15" height="15" alt="linkedin">
+                                    </a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section--bottom">
+                    <p class="copyrights text-center">©2019 by Edbridg</p>
+                </div>
+            </div>
+        </footer>
+
+        <div class="bg bg--01">
+            <img src="./assets/images/bg__01.png" alt="">
+        </div>
+        <div class="bg bg--02">
+            <img src="./assets/images/bg__02.png" alt="">
+        </div>
+        <script type="text/javascript">
+            $("#amountSlider-1").ionRangeSlider({
+                skin: "round",
+                step: 1000,
+                prefix: "$",
+                min: 5000,
+                max: 80000
+            });
+        </script>
+    <script type="text/javascript" src="./js/vendors~app.bundle.js"></script><script type="text/javascript" src="./js/app.bundle.js"></script></body>
+</html>

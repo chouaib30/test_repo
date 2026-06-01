@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content=>
+        <title>Edbridg App step 02</title>     
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:600|Poppins:300,500,600,700&display=swap" rel="stylesheet"> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Edbridg"><link href="css/app.bundle.css" rel="stylesheet"></head>
+    <body class="preload gray--color">
+        <!-- header -->
+        <header class="header" id="sticky-header-js">
+            <div class="container">
+                <a href="./step_01.html" class="logo" id="logo">
+                    <img src="./assets/icons/edbridg_logo_white.svg" width="144" alt="">
+                </a>
+
+                <a href="javascript:void(0)" class="btn btn-primary menu  hamburger--white" id="trigger">
+                    <img src="./assets/icons/hamburger_menu.svg" alt="">
+                </a>
+            </div>
+        </header>
+
+        <!-- side nav -->
+        <div id="sideNav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" id="closeBtn">&times;</a>
+            <a target="_blank" href="https://www.edbridg.com/about-us">About us</a>
+            <a target="_blank" href="https://www.edbridg.com/contact">Contact</a>
+        </div>
+
+        <!-- section 01 ==> Hero -->
+        <section class="jumbotron-fluid section--01 hero text-center">
+            <img src="./assets/images/hero__bg.jpg" alt="">
+        </section>
+
+        <!-- section 02 -->
+        <section class="jumbotron-fluid section--05 text-center">
+            <div class="container">
+                <h2 class="heading text-center">Discover your individual rate now</h2>
+                <form action="">
+                    <h3 class="heading--medium">Infos needed for calculation</h3>
+
+                    <!-- slider -->
+                    <div class="slider__container text-left">
+                        <label for="slider"> Amount needed </label>
+                        <div class="d-flex w-100 h-100 align-items-center justify-content-between">
+                            <input type="range" min="5000" max="80000" step="1000" class="amount-slider" id="amountSlider-2" required>
+                        </div>
+                    </div>
+
+                    <!-- Degree -->
+                    <div class="block text-left is--passed">
+                        <label for="degree"> Degree </label>
+                        <div class="select__box select__box_outline">
+                            <select id="degree" class="form-control" autofocus="true" required>
+                                <option value="1" selected>Degree</option>
+                                <option value="2"> Business and finance </option>
+                            </select>
+                            <div class="icon">
+                                <img src="./assets/icons/arrow.svg" width="15" height="15" alt="">
+                            </div>
+                        </div>
+                        <div class="valid-feedback">
+                            passed 
+                        </div>
+                    </div>
+
+                    <!-- Country of studies -->
+                    <div class="block text-left">
+                        <label for="geography"> Country of studies </label>
+                        <div class="select__box select__box_outline">
+                            <select id="geography" class="form-control" autofocus="true" required>
+                                <option value="1" selected>Country of studies</option>
+                                <option value="2"> Business and finance </option>
+                            </select>
+                            <div class="icon">
+                                <img src="./assets/icons/arrow.svg" width="15" height="15" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- School -->
+                    <div class="block text-left">
+                        <label for="school"> School </label>
+                        <div class="select__box select__box_outline">
+                            <select id="school" class="form-control" autofocus="true" required>
+                                <option value="1" selected>School</option>
+                                <option value="2"> INSEAD  </option>
+                                <option value="3"> MIT  </option>
+                            </select>
+                            <div class="icon">
+                                <img src="./assets/icons/arrow.svg" width="15" height="15" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Major -->
+                    <div class="block text-left">
+                        <label for="major"> Major </label>
+                        <div class="select__box select__box_outline">
+                            <select id="major" class="form-control" autofocus="true" required>
+                                <option value="1" selected>Major</option>
+                                <option value="2"> Business and finance </option>
+                            </select>
+                            <div class="icon">
+                                <img src="./assets/icons/arrow.svg" width="15" height="15" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Previous work experience? -->
+                    <div class="switch__container d-flex flex-column mx-auto text-left">
+                        <label for="experience"> Previous work experience? </label>
+                        <div class="d-flex flex-row align-items-center">
+                            <label class="switch">
+                                <input type="checkbox" id="experience" class="form-control" required checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <h3 class="heading--medium">Infos needed to check eligibility</h3>
+
+                    <!-- name and sirname -->
+                    <div class="block block--02 text-left d-flex flex-column flex-md-row  justify-content-between">
+                        <div class="input-group input-group--01 d-flex flex-column">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" class="form-control error" placeholder="Ex: John" required>
+                            <div class="invalid-feedback">
+                                Please enter a right value.
+                            </div>
+                        </div>
+                        <div class="input-group input-group--02  d-flex flex-column">
+                            <label for="surname">Surname</label>
+                            <input type="text" id="surname" class="form-control success" placeholder="Ex: Smith" required>
+                            <div class="valid-feedback">
+                                Looks good! 
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- email -->
+                    <div class="block text-left d-flex flex-row justify-content-between ">
+                        <div class="input-group d-flex flex-column w-100">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" class="form-control" placeholder="Ex: John" required>
+                        </div>
+                    </div>
+
+                    <!-- Nationality -->
+                    <div class="block text-left">
+                        <label for="nationality"> Nationality </label>
+                        <div class="select__box select__box_outline">
+                            <select id="nationality" class="form-control" autofocus="true" required>
+                                <option value="1" selected>Nationality</option>
+                                <option value="2"> INSEAD  </option>
+                                <option value="3"> MIT  </option>
+                            </select>
+                            <div class="icon">
+                                <img src="./assets/icons/arrow.svg" width="15" height="15" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary">Calculate my rate</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- contact us -->
+        <section class="jumbotron-fluid contact_us text-center gray--color">
+            <div class="container">
+                <p class="text">Any question ? Please email us at </p>
+                <p class="email">contact@edbridg.com</p>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="section--top">
+                    <div class="row">
+                        <div class="col-12 col-xl-3">
+                            <div class="inner__container block--01">
+
+                                <a href="./step_01.html" class="logo" id="logo">
+                                    <img src="./assets/icons/edbridg_logo_white.svg" width="148" alt="">
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-xl-5">
+                            <div class="inner__container block--02">
+                                <nav class="links">
+                                    <a href="./step_01.html">Home</a>
+                                    <a target="_blank" href="https://www.edbridg.com/about-us">About us</a>
+                                    <a target="_blank" href="https://www.edbridg.com/contact">Contact us</a>
+                                </nav>
+                                <p class="address">
+                                    20 OLD BAILEY, London, EC4M 7AN, United Kingdom
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xl-4">
+                            <div class="inner__container block--03">
+                                <span>Follow us :</span>
+                                <nav class="social__media">
+                                    <a href="https://www.linkedin.com/company/edbridg/"  target="_blank">
+                                        <img src="./assets/icons/linkedin.svg" width="15" height="15" alt="linkedin">
+                                    </a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section--bottom">
+                    <p class="copyrights text-center">©2019 by Edbridg</p>
+                </div>
+            </div>
+        </footer>
+        <script type="text/javascript">
+            $("#amountSlider-2").ionRangeSlider({
+                skin: "round",
+                step: 1000,
+                prefix: "$",
+                min: 5000,
+                max: 80000
+            });
+        </script>
+    <script type="text/javascript" src="./js/vendors~app.bundle.js"></script><script type="text/javascript" src="./js/app.bundle.js"></script></body>
+</html>
